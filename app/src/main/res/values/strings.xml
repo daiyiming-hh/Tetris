@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">俄罗斯方块</string>
+    <string name="action_settings">Settings</string>
+    <string name="label_time">时间：</string>
+    <string name="label_score">分数：</string>
+    <string name="default_time">00:00</string>
+    <string name="default_score">0</string>
+    <string name="notification2">在游戏屏幕四个方向滑动手指可更加方便的控制游戏</string>
+    <string name="notification1">点击任意位置开始游戏</string>
+</resources>

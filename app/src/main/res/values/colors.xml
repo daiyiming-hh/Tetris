@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cell_color_I">#1AF1F1</color>
+    <color name="cell_color_J">#0000EF</color>
+    <color name="cell_color_L">#F0A000</color>
+    <color name="cell_color_O">#EFEF00</color>
+    <color name="cell_color_S">#1AF11A</color>
+    <color name="cell_color_T">#A000EF</color>
+    <color name="cell_color_Z">#F00000</color>
+</resources>
