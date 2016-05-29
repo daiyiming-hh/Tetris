@@ -42,7 +42,11 @@ public class GameView extends View {
     private Random random = null;
     private int minScrollDistance = 0;
     private int downX = 0, downY = 0;
+    private int score = 0;
+    private float time = 0;
+    private OnGameMessageChangeListener listener = null;
 
+    public Handler handler = new Handler();
     private Runnable playRunnable = new Runnable() {
         @Override
         public void run() {
@@ -109,11 +113,6 @@ public class GameView extends View {
             }
         }
     };
-    public Handler handler = new Handler();
-
-    private int score = 0;
-    private float time = 0;
-    private OnGameMessageChangeListener listener = null;
 
     public interface OnGameMessageChangeListener {
         void OnGameTimeChanged(int time);

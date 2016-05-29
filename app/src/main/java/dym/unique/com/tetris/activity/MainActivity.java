@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import dym.unique.com.tetris.R;
 import dym.unique.com.tetris.dialog.InquiryDialog;
-import dym.unique.com.tetris.utils.MaxScore;
+import dym.unique.com.tetris.utils.MaxScoreTool;
 import dym.unique.com.tetris.view.GameView;
 
 public class MainActivity extends Activity implements View.OnClickListener, GameView.OnGameMessageChangeListener, View.OnTouchListener {
@@ -27,7 +27,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Game
     private ImageView img_right = null;
     private ImageView img_rotate = null;
     private GameView gv_view = null;
-    private MaxScore maxScore = null;
+    private MaxScoreTool maxScore = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +60,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Game
         rl_cover.setTag(false);
 
         //获取工具
-        maxScore = new MaxScore(this);
+        maxScore = new MaxScoreTool(this);
     }
 
     private void flushMaxScore() {
